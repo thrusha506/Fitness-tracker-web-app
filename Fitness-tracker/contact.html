@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BalanceBeat - Contact</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="home.html">
+        <i class="fa-solid fa-heart-pulse text-success"></i> BalanceBeat
+      </a>
+
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="activity.html">Activity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="progress.html">Progress</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="goals.html">Goals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-success" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <button class="btn btn-success rounded-pill px-4">Sign In</button>
+
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <div class="container mt-5">
+    <h2 class="fw-bold">Contact Us</h2>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="container mt-4">
+    <div class="row g-4">
+
+      <!-- LEFT SIDE FORM -->
+      <div class="col-md-7">
+        <div class="card p-4 h-100">
+
+          <h5 class="mb-4">
+            <i class="fa-solid fa-address-book text-success"></i>
+            Contact
+          </h5>
+
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <input id="name" type="text" class="form-control" placeholder="Name">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-regular fa-envelope"></i>
+              </span>
+              <input id="email" type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-regular fa-envelope"></i>
+              </span>
+              <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
+            </div>
+          </div>
+
+          <button onclick="sendMessage()" class="btn btn-success rounded-pill px-4">
+            Send Message
+          </button>
+
+          <p id="successMsg" class="text-success mt-3"></p>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-md-5">
+
+        <!-- IMAGE CARD -->
+        <div class="card p-3 mb-4">
+          <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg"
+               class="img-fluid rounded">
+        </div>
+
+        <!-- CONTACT DETAILS CARD -->
+        <div class="card p-4">
+          <div class="d-flex align-items-center mb-3">
+            <i class="fa-regular fa-envelope me-3 fs-4"></i>
+            <span>contact@balancebeat.com</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-phone me-3 fs-4"></i>
+            <span>+(011) 234-5678</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="contact.js"></script>
+
+</body>
+</html>
